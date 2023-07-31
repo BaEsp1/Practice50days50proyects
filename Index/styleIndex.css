@@ -135,7 +135,8 @@ Day 2  */
   flex-direction: column;
   background-color: #000000;
   align-items: center;
-  padding: 1%;
+  padding: 3%;
+  min-height: 25vw;
 }
 
 .segmentacion2 h1{
@@ -401,4 +402,61 @@ nav a:hover {
     margin-top: -26%;
     align-items: center;
     margin-left: 28%;
+}
+
+/* <!-------------------- day 4 -------------------------------> */
+
+.segmentacion4{
+  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33vh;
+  overflow: hidden;
+  margin: 0;
+  flex-direction: column;
+}
+
+.search4 {
+  position: relative;
+  height: 50px;
+}
+
+.search4 .inputd4 {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.btnd4 {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  border-radius: 0px 20px 20px 0px;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.btnd4:focus,
+.inputd4:focus {
+  outline: none;
+}
+
+.search4.active .inputd4 {
+  width: 200px;
+}
+
+.search4.active .btnd4 {
+  transform: translateX(198px);
 }

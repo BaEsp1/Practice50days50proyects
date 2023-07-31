@@ -76,3 +76,14 @@ function removeActiveClasses() {
     open.addEventListener('click', () => container.classList.add('show-nav'))
                 
     close.addEventListener('click', () => container.classList.remove('show-nav'))
+
+// *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+        // DAY 4
+    const search = document.querySelector('.search4')
+    const btn = document.querySelector('.btnd4')
+    const input = document.querySelector('.inputd4')
+    
+    btn.addEventListener('click', () => {
+        search.classList.toggle('active')
+        input.focus()
+    })
